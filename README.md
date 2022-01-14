@@ -5,6 +5,7 @@ If your torrent client renamed your torrent's filename to its hash and you want 
 ## Dependency
 
 * [torrentool](https://github.com/idlesign/torrentool)
+* [pathvalidate](https://github.com/thombashi/pathvalidate)
 
 To install, run this command:
 ```
