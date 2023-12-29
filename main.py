@@ -53,11 +53,10 @@ def main(args: Namespace):
 
         try:
             torrent = Torrent.from_file(file)
+            torrent_name = torrent.name
         except Exception:
             print(f"Encountered an error with {file.as_posix()}. Skipping.")
             continue
-
-        torrent_name = torrent.name
 
         # Initial rename
         new_path: Path = dest_dir / f"{torrent_name}.torrent"
